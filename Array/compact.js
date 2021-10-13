@@ -1,17 +1,18 @@
 /**
  * 
- * @param {任意数组} arr 
- * @returns {返回的是一个每一项都为true的新数组}
+ * @param {Array} arr 要压缩的数组
+ * @returns {Array} 返回过滤值的新数组
  */
+import {
+    checkArr
+} from '../common/utils.js'
+
 let myCompact = function (arr) {
     // 先做参数校验
-    if (!(arr instanceof Array)) {
-        throw "请传入正确的参数";
-    }
-    let newArr = []
+    if (!checkArr(arr)) throw "请传入正确的参数";
+    let ret = []// 最终的结果
     arr.forEach(item => {
-        if (item) newArr.push(item)
+        if (item) ret.push(item)
     });
-    return newArr
+    return ret
 }
-module.exports = myCompact
