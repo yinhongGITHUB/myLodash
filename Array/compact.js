@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {任意数组} arr 
+ * @returns 
+ */
 let myCompact = function(arr) {
     // 先做参数校验
     if (!(arr instanceof Array)) {

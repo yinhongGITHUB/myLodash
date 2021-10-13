@@ -1,10 +1,8 @@
 /**
- * params（参数）：
- * 第一个参数：array (Array): The array to process（要处理的数组）。
- * 第二个参数：[size=1] (number): The length of each chunk（每个块的长度）。
  * 
- * Returns（返回值）：
- * (Array): Returns the new array of chunks（返回一个新的块数组）。
+ * @param {The array to process（要处理的数组）} array 
+ * @param {The length of each chunk（每个块的长度）} size 
+ * @returns {(Array): Returns the new array of chunks（返回一个新的块数组）}
  */
 let myChunk = function (array, size) {
   //进来先做类型判断
