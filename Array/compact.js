@@ -7,7 +7,7 @@ import {
     checkArr
 } from '../common/utils.js'
 
-let myCompact = function (arr) {
+export let myCompact = function (arr) {
     // 先做参数校验
     if (!checkArr(arr)) throw "请传入正确的参数";
     let ret = []// 最终的结果
