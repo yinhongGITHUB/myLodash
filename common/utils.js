@@ -16,16 +16,16 @@ export function isEqual(a, b) {
   for (var i = 0; i < aKeys.length; i++) {
     var key = aKeys[i];
 
-    var propA = a[key];
-    var propB = b[key];
+    var valueA = a[key];
+    var valueB = b[key];
 
-    if (typeof propA === "object") {
-      if (isEqual(propA, propB)) {
+    if (typeof valueA === "object") {
+      if (isEqual(valueA, valueB)) {
         return;
       } else {
         return a;
       }
-    } else if (propA !== propB) {
+    } else if (valueA !== valueB) {
       return a;
     }
   }
