@@ -2,7 +2,7 @@ import { checkArr, isEqual, checkFunction } from "../common/utils.js";
 /**
  *
  * @param {Array} array 要检查的数组
- * @param {...Array} values 要排除的值
+ * @param {Array} values 要排除的值
  * @param {功能} comparator 每个元素调用的比较器
  * @returns
  */
